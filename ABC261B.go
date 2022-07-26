@@ -1,22 +1,28 @@
+//入出力高速化
+
 package main
 import "fmt"
+import "bufio"
+import "os"
 
 func main(){
-	var N int
+    in := bufio.NewReader(os.Stdin)
+    out := bufio.NewWriter(os.Stdout)
+    defer out.Flush()
+
 	var flag bool
-	
-	fmt.Scan(&N)
-	
+	var N int
+	fmt.Fscan(in, &N)
+
 	A := make([]string, N)
 	for i:= 0; i < N; i++ {
 	    var a string
-	    fmt.Scan(&a)
+	    fmt.Fscan(in, &a)
 	    A[i] = a
 	}
 	
 	for i := 0; i < N; i++ {
 	    for j := 0; j < N; j++ {
-//	        println(string(A[i][j]))
 	        if string(A[i][j]) == "W" && string(A[j][i]) != "L" {
 	            flag = true
 	        } else if string(A[i][j]) == "L" && string(A[j][i]) != "W" {
@@ -27,9 +33,10 @@ func main(){
 	    }
 	}
 	if flag == false {
-	    fmt.Println("correct")
+	    fmt.Fprint(out,"correct")
 	} else {
-	    fmt.Println("incorrect")
+	    fmt.Fprint(out,"incorrect")
 	}
 }
+
 
