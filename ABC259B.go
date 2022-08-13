@@ -1,3 +1,5 @@
+//三角関数
+
 package main
 import "fmt"
 import "math"
