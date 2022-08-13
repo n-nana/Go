@@ -1,3 +1,5 @@
+// or(||)とかand(&&)
+
 package main
 import "fmt"
 
