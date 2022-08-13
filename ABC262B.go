@@ -1,3 +1,5 @@
+//2次元スライス
+
 package main
 import "fmt"
 import "bufio"
