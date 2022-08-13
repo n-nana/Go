@@ -1,3 +1,5 @@
+//pow, float64
+
 package main
 import "fmt"
 import "math"
