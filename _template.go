@@ -15,7 +15,7 @@ func main(){
 	var N int
 	fmt.Fscan(in, &N)
     
-// 1D_slice
+// 1D_slice_string
 //    A := make([]string, N)
 //    for i := 0; i < N; i++ {
 //        var a string
@@ -23,6 +23,11 @@ func main(){
 //        A[i] = a
 //    }
     
+//    2D_slice_bool
+//    A := make([][]bool, N)
+//    for i := 0; i < N; i++ {
+//        A[i] = make([]bool, N)
+//    }
+    
     fmt.Fprintln(out, N)
 }
-
