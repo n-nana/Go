@@ -1,3 +1,5 @@
+// dxとdyで周囲を確認
+
 package main
 import "fmt"
 //import "bufio"
