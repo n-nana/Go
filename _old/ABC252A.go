@@ -1,3 +1,5 @@
+// chr(intからstringへ変換)
+
 package main
 import "fmt"
 
