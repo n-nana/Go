@@ -8,6 +8,8 @@ import "os"
 //import "strconv"
 //import "strings"
 
+const MOD int = 998244353
+
 func main(){
     in := bufio.NewReader(os.Stdin)
     out := bufio.NewWriter(os.Stdout)
