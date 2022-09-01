@@ -8,15 +8,15 @@ import "os"
 //import "strconv"
 //import "strings"
 
-const MOD int = 998244353
+const MOD1 int = 998244353
+var in = bufio.NewReader(os.Stdin)
+var out = bufio.NewWriter(os.Stdout)
 
 func main(){
-    in := bufio.NewReader(os.Stdin)
-    out := bufio.NewWriter(os.Stdout)
     defer out.Flush()
 
-	var N int
-	fmt.Fscan(in, &N)
+	var N,M int
+	fmt.Fscan(in, &N,&M)
     
 // 1D_slice_string
 //    A := make([]string, N)
@@ -32,5 +32,32 @@ func main(){
 //        A[i] = make([]bool, N)
 //    }
     
-    fmt.Fprintln(out, N)
+    fmt.Fprintln(out, N,M,max(N,M),min(N,M),abs(N),abs(M))
 }
+
+
+//-------------------------------------------------------------
+func max(a,b int) int {
+    if a < b {
+        return b
+    } else {
+        return a
+    }
+}
+
+func min(a,b int) int {
+    if a < b {
+        return a
+    } else {
+        return b
+    }
+}
+
+func abs(a int) int {
+    if a < 0 {
+        return -a
+    } else {
+        return a
+    }
+}
+
