@@ -31,6 +31,23 @@ func main(){
 //    for i := 0; i < N; i++ {
 //        A[i] = make([]bool, N)
 //    }
+
+//    3D_slice
+//    P := make([][][]int, 3)
+//    for i := 0; i < 3; i++ {
+//        P[i] = make([][]int, H+1)
+//        for j := 0; j < H+1; j++ {
+//            P[i][j] = make([]int, W+1)
+//            for k := 0; k < W+1; k++ {
+//                P[i][j][k] = 0
+//            }
+//        }
+//    }
+
+//    dct := map[string]int{
+//        "J": 0,
+//    }
+
     
     fmt.Fprintln(out, N,M,max(N,M),min(N,M),abs(N),abs(M))
 }
