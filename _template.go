@@ -47,8 +47,9 @@ func main(){
 //    dct := map[string]int{
 //        "J": 0,
 //    }
+	
+//    dct := make(map[string]int)
 
-    
     fmt.Fprintln(out, N,M,max(N,M),min(N,M),abs(N),abs(M))
 }
 
