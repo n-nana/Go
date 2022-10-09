@@ -2,13 +2,14 @@ package main
 import "fmt"
 import "bufio"
 import "os"
+import "math"
 
 //import "reflect"
 //import "sort"
 //import "strconv"
 //import "strings"
 
-const MOD1 int = 998244353
+//const MOD1 int = 998244353
 var in = bufio.NewReader(os.Stdin)
 var out = bufio.NewWriter(os.Stdout)
 
@@ -18,6 +19,8 @@ func main(){
 	var N,M int
 	fmt.Fscan(in, &N,&M)
     
+    fmt.Fprintln(out, N)
+
 // 1D_slice_string
 //    A := make([]string, N)
 //    for i := 0; i < N; i++ {
@@ -32,25 +35,7 @@ func main(){
 //        A[i] = make([]bool, N)
 //    }
 
-//    3D_slice
-//    P := make([][][]int, 3)
-//    for i := 0; i < 3; i++ {
-//        P[i] = make([][]int, H+1)
-//        for j := 0; j < H+1; j++ {
-//            P[i][j] = make([]int, W+1)
-//            for k := 0; k < W+1; k++ {
-//                P[i][j][k] = 0
-//            }
-//        }
-//    }
 
-//    dct := map[string]int{
-//        "J": 0,
-//    }
-	
-//    dct := make(map[string]int)
-
-    fmt.Fprintln(out, N,M,max(N,M),min(N,M),abs(N),abs(M))
 }
 
 
@@ -77,5 +62,9 @@ func abs(a int) int {
     } else {
         return a
     }
+}
+
+func pow(p,q int) int {
+    return int(math.Pow(float64(p), float64(q)))
 }
 
